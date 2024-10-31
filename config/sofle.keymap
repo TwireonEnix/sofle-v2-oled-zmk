@@ -15,10 +15,7 @@
 #define RAISE 2
 #define ADJUST 3
 
-&mt {
-    flavor = "tap-preferred";
-    hold-trigger-key-positions = <26 27 28 25 27 28 31 32 33 34>;
-};
+&mt { flavor = "balanced"; };
 
 / {
     // Activate ADJUST layer by pressing raise and lower
@@ -66,7 +63,7 @@
 &kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                  &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
 &kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                  &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
 &kp LSHFT         &kp W               &kp J           &kp V           &kp D             &kp K      &kp C_MUTE       &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
-                                      &kt LG(C)       &kp LG(V)       &lt 3 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC    &lt 2 ENTER  &lt 1 DEL         &none           &tog 4
+                                      &kt LG(C)       &kp LG(V)       &lt 3 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC    &lt 2 ENTER  &lt 1 DEL         &none           &to 4
             >;
 
             sensor-bindings =
@@ -142,7 +139,7 @@
 &kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                  &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
 &kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                  &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
 &kp LSHFT         &kp W               &kp J           &kp V           &kp D             &kp K      &kp C_MUTE       &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
-                                      &kt LG(C)       &kp LG(V)       &lt 3 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC    &lt 2 ENTER  &lt 1 DEL         &none           &tog 0
+                                      &kt LG(C)       &kp LG(V)       &lt 3 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC    &lt 2 ENTER  &lt 1 DEL         &none           &to 0
             >;
 
             sensor-bindings =
