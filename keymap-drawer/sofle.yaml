@@ -184,12 +184,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   MAC-Navigation:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -226,7 +226,7 @@ layers:
   - PLAY PAUSE
   - FORWARD
   - ''
-  - {t: ▽, type: trans}
+  - BT CLR
   - ''
   - ''
   - ''
@@ -240,10 +240,10 @@ layers:
   - ''
   - ''
   - '&caps_word'
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   WIN-Canary:
   - ''
   - ''
