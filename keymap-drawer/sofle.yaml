@@ -136,11 +136,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - KP DIVIDE
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - KP PLUS
   - F12
   - F7
   - F8
@@ -152,7 +152,7 @@ layers:
   - {t: '4', h: LEFT ALT}
   - {t: '5', h: LEFT GUI}
   - {t: '6', h: LEFT SHIFT}
-  - CLCK
+  - KP MINUS
   - F11
   - {t: F4, h: LEFT SHIFT}
   - {t: F5, h: LEFT GUI}
@@ -164,7 +164,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - KP MULTIPLY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F10
@@ -226,7 +226,7 @@ layers:
   - PLAY PAUSE
   - FORWARD
   - ''
-  - RGB TOG
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -239,7 +239,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
+  - '&caps_word'
   - ''
   - ''
   - ''
@@ -281,7 +281,7 @@ layers:
   - {t: I, h: LEFT ALT}
   - {t: A, h: LEFT GUI}
   - ''''
-  - LSHFT
+  - AGr+ TAB
   - W
   - J
   - V
@@ -295,15 +295,15 @@ layers:
   - ','
   - .
   - ;
-  - {t: Gui+ C, h: toggle}
-  - Gui+ V
+  - {t: Ctl+ C, h: toggle}
+  - Ctl+ V
   - {t: TAB, h: WIN-Navigation}
   - SPACE
   - BACKSPACE
   - ESC
   - {t: ENTER, h: WIN-Numbers}
   - {t: DEL, h: WIN-Symbols}
-  - ''
+  - Sft+ TAB
   - {t: MAC-Canary, h: toggle}
   WIN-Symbols:
   - ''
@@ -380,11 +380,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
+  - KP DIVIDE
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - KP PLUS
   - F12
   - F7
   - F8
@@ -396,7 +396,7 @@ layers:
   - {t: '4', h: LEFT ALT}
   - {t: '5', h: LEFT CONTROL}
   - {t: '6', h: LEFT SHIFT}
-  - CLCK
+  - KP MINUS
   - F11
   - {t: F4, h: LEFT SHIFT}
   - {t: F5, h: LEFT CONTROL}
@@ -408,7 +408,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: ▽, type: trans}
+  - KP MULTIPLY
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F10
@@ -470,7 +470,7 @@ layers:
   - PLAY PAUSE
   - FORWARD
   - ''
-  - RGB TOG
+  - {t: ▽, type: trans}
   - ''
   - ''
   - ''
@@ -483,7 +483,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
+  - '&caps_word'
   - ''
   - ''
   - ''
