@@ -218,7 +218,7 @@ layers:
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
-  - UP ARROW
+  - RIGHT
   - Alt+Ctl+ RIGHT
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
@@ -257,7 +257,7 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ UP ARROW
+  - Gui+ TAB
   - Q
   - L
   - Y
@@ -268,18 +268,18 @@ layers:
   - O
   - U
   - /
-  - Gui+ SPACE
+  - Alt+ SPACE
   - RIGHT ALT
-  - {t: C, h: LEFT CONTROL}
+  - {t: C, h: LEFT GUI}
   - {t: R, h: LEFT ALT}
-  - {t: S, h: LEFT GUI}
+  - {t: S, h: LEFT CONTROL}
   - {t: T, h: LEFT SHIFT}
   - G
   - M
   - {t: N, h: LEFT SHIFT}
-  - {t: E, h: LEFT GUI}
+  - {t: E, h: LEFT CONTROL}
   - {t: I, h: LEFT ALT}
-  - {t: A, h: LEFT CONTROL}
+  - {t: A, h: LEFT GUI}
   - ''''
   - LSHFT
   - W
@@ -288,7 +288,7 @@ layers:
   - D
   - K
   - MUTE
-  - Gui+ Q
+  - Alt+ F4
   - X
   - H
   - ':'
@@ -297,11 +297,194 @@ layers:
   - ;
   - {t: Gui+ C, h: toggle}
   - Gui+ V
-  - {t: TAB, h: MAC-Navigation}
+  - {t: TAB, h: WIN-Navigation}
   - SPACE
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: MAC-Numbers}
-  - {t: DEL, h: MAC-Symbols}
+  - {t: ENTER, h: WIN-Numbers}
+  - {t: DEL, h: WIN-Symbols}
   - ''
   - {t: MAC-Canary, h: toggle}
+  WIN-Symbols:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&addSurrounds'
+  - _
+  - '-'
+  - '*'
+  - '@'
+  - Alt+ 8
+  - '&'
+  - '%'
+  - ^
+  - '`'
+  - ''
+  - ''
+  - \
+  - '?'
+  - (
+  - )
+  - '='
+  - '&upDirectory'
+  - '{'
+  - '}'
+  - $
+  - '"'
+  - ''
+  - ''
+  - '~'
+  - '!'
+  - '['
+  - ']'
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - <
+  - '>'
+  - '#'
+  - '|'
+  - ''
+  - ''
+  - ''
+  - '&jsfn'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  WIN-Numbers:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - F12
+  - F7
+  - F8
+  - F9
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT GUI
+  - {t: '4', h: LEFT ALT}
+  - {t: '5', h: LEFT CONTROL}
+  - {t: '6', h: LEFT SHIFT}
+  - CLCK
+  - F11
+  - {t: F4, h: LEFT SHIFT}
+  - {t: F5, h: LEFT CONTROL}
+  - {t: F6, h: LEFT ALT}
+  - LEFT GUI
+  - ''
+  - {t: ▽, type: trans}
+  - ','
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  WIN-Navigation:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+Gui+Ctl+ LEFT
+  - Alt+Gui+Ctl+ RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PAGE DOWN
+  - PG UP
+  - Ctl+ 8
+  - ''
+  - ''
+  - LEFT GUI
+  - LEFT ALT
+  - LEFT CONTROL
+  - LEFT SHIFT
+  - Sft+Gui+ S
+  - Gui+ LEFT ARROW
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT
+  - Gui+ RIGHT
+  - ''
+  - ''
+  - PREVIOUS
+  - PLAY PAUSE
+  - FORWARD
+  - ''
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
