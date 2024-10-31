@@ -75,50 +75,50 @@ layers:
   - ''
   - ''
   - ''
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - F12
-  - ''
-  - '!'
+  - '&addSurrounds'
+  - _
+  - '-'
+  - '*'
   - '@'
-  - '#'
-  - $
+  - Alt+ 8
+  - '&'
   - '%'
   - ^
-  - '&'
-  - KP MULTIPLY
+  - '`'
+  - ''
+  - ''
+  - \
+  - '?'
   - (
   - )
-  - '|'
-  - ''
   - '='
-  - '-'
-  - KP PLUS
+  - '&upDirectory'
   - '{'
   - '}'
+  - $
+  - '"'
   - ''
   - ''
+  - '~'
+  - '!'
   - '['
   - ']'
-  - ;
-  - ':'
-  - \
+  - +
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - .
+  - <
+  - '>'
+  - Alt+ 3
+  - '|'
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - '&jsfn'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
   - ''
   - ''
@@ -136,47 +136,47 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - F12
+  - F7
+  - F8
+  - F9
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
   - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
+  - {t: '4', h: LEFT ALT}
+  - {t: '5', h: LEFT GUI}
+  - {t: '6', h: LEFT SHIFT}
   - CLCK
-  - PG DN
-  - LEFT
-  - DOWN
-  - RIGHT
-  - DEL
-  - BSPC
+  - F11
+  - {t: F4, h: LEFT SHIFT}
+  - {t: F5, h: LEFT GUI}
+  - {t: F6, h: LEFT ALT}
+  - LEFT CONTROL
+  - ''
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ','
+  - '1'
+  - '2'
+  - '3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - .
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -196,42 +196,42 @@ layers:
   - ''
   - ''
   - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
+  - ''
+  - Alt+Gui+Ctl+ LEFT
+  - Alt+Gui+Ctl+ RIGHT
+  - Gui+ LEFT ARROW
+  - Gui+ RIGHT
   - ''
   - ''
   - ''
+  - PAGE DOWN
+  - PG UP
   - ''
   - ''
   - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - LEFT SHIFT
+  - Ctl+Sft+Gui+ 4
+  - Alt+Ctl+ LEFT ARROW
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - UP ARROW
+  - Alt+Ctl+ RIGHT
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - PREVIOUS
+  - PLAY PAUSE
+  - FORWARD
   - ''
   - RGB TOG
   - ''
   - ''
   - ''
-  - ''
-  - ''
+  - HOME
+  - END
   - ''
   - ''
   - ''
