@@ -124,27 +124,68 @@
 
             label = "m-nav";
             bindings = <
-&bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1           &bt BT_SEL 2        &bt BT_SEL 3    &bt BT_SEL 4                                        &none                   &none           &none           &none         &none         &none
-&none                 &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &none                                               &none                   &none           &kp PAGE_DOWN   &kp PG_UP     &none         &none
-&none                 &kp LEFT_CONTROL      &kp LEFT_ALT           &kp LEFT_GUI        &kp LEFT_SHIFT  &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp UP_ARROW  &kp LA(LC(RIGHT))
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &rgb_ug RGB_TOG    &none  &none                   &none           &kp HOME        &kp END       &none         &none
+&bt BT_CLR            &bt BT_SEL 0          &bt BT_SEL 1           &bt BT_SEL 2        &bt BT_SEL 3    &bt BT_SEL 4                                        &none                   &none           &none           &none         &none      &none
+&none                 &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &none                                               &none                   &none           &kp PAGE_DOWN   &kp PG_UP     &none      &none
+&none                 &kp LEFT_CONTROL      &kp LEFT_ALT           &kp LEFT_GUI        &kp LEFT_SHIFT  &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LA(LC(RIGHT))
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &rgb_ug RGB_TOG    &none  &none                   &none           &kp HOME        &kp END       &none      &none
                                             &none                  &none               &none           &none                     &none              &none  &none                   &none           &none           &none
             >;
         };
 
         WIN-Canary {
-            label = "win";
+            label = "windows";
             bindings = <
-&none             &none               &none           &none           &none             &none                                  &none        &none             &none           &none           &none               &none
-&kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                  &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
-&kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                  &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
-&kp LSHFT         &kp W               &kp J           &kp V           &kp D             &kp K      &kp C_MUTE       &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
-                                      &kt LG(C)       &kp LG(V)       &lt 3 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC    &lt 2 ENTER  &lt 1 DEL         &none           &to 0
+&none          &none           &none           &none               &none             &none                                   &none        &none             &none               &none           &none           &none
+&kp LG(TAB)    &kp Q           &kp L           &kp Y               &kp P             &kp B                                   &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
+&kp RIGHT_ALT  &mt LEFT_GUI C  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                                   &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &kp SINGLE_QUOTE
+&kp LSHFT      &kp W           &kp J           &kp V               &kp D             &kp K      &kp C_MUTE       &kp LA(F4)  &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp SEMICOLON
+                               &kt LG(C)       &kp LG(V)           &lt 7 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC     &lt 6 ENTER  &lt 5 DEL         &none               &to 0
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
                 <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        WIN-Symbols {
+            label = "w-symbols";
+            bindings = <
+&none  &none          &none         &none                 &none                  &none                        &none             &none          &none             &none       &none              &none
+&none  &addSurrounds  &kp UNDER     &kp MINUS             &kp ASTRK              &kp AT                       &kp LA(NUMBER_8)  &kp AMPERSAND  &kp PRCNT         &kp CARET   &kp GRAVE          &none
+&none  &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                    &upDirectory      &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
+&none  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &trans    &trans  &kp PERIOD        &kp LESS_THAN  &kp GREATER_THAN  &kp HASH    &kp PIPE           &none
+                      &none         &none                 &jsfn                  &trans     &trans    &trans  &trans            &trans         &trans            &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        WIN-Numbers {
+            label = "w-numbers";
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1           &bt BT_SEL 2               &bt BT_SEL 3             &bt BT_SEL 4                    &trans   &trans             &trans               &trans           &trans        &trans
+&trans      &none         &kp N7                 &kp N8                     &kp N9                   &trans                          &kp F12  &kp F7             &kp F8               &kp F9           &none         &trans
+&trans      &kp LEFT_GUI  &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp CLCK                        &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_CONTROL F5  &mt LEFT_ALT F6  &kp LEFT_GUI  &none
+&trans      &kp COMMA     &kp N1                 &kp N2                     &kp N3                   &trans        &trans    &trans  &kp F10  &kp F1             &kp F2               &kp F3           &trans        &trans
+                          &trans                 &trans                     &kp DOT                  &kp N0        &trans    &trans  &trans   &trans             &trans               &trans
+            >;
+
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&inc_dec_kp PG_UP PG_DN>;
+        };
+
+        WIN-Navigation {
+            label = "w-nav";
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0          &bt BT_SEL 1           &bt BT_SEL 2      &bt BT_SEL 3    &bt BT_SEL 4                             &none               &none           &none           &none         &none             &none
+&none       &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &none             &none           &none                                    &none               &none           &kp PAGE_DOWN   &kp PG_UP     &kp LC(NUMBER_8)  &none
+&none       &kp LEFT_GUI          &kp LEFT_ALT           &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(S))                            &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LG(RIGHT)
+&none       &none                 &kp K_PREVIOUS         &kp K_PLAY_PAUSE  &kp K_FORWARD   &none          &rgb_ug RGB_TOG    &none  &none               &none           &kp HOME        &kp END       &none             &none
+                                  &none                  &none             &none           &none          &none              &none  &none               &none           &none           &none
+            >;
         };
     };
 };
