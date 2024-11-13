@@ -37,13 +37,13 @@ layers:
   - {t: I, h: LEFT ALT}
   - {t: A, h: LEFT CONTROL}
   - ''''
-  - LSHFT
+  - ESCAPE
   - W
   - J
   - V
   - D
   - K
-  - MUTE
+  - {t: WIN-Canary, h: toggle}
   - Gui+ Q
   - X
   - H
@@ -59,8 +59,8 @@ layers:
   - ESC
   - {t: ENTER, h: MAC-Numbers}
   - {t: DEL, h: MAC-Symbols}
-  - ''
-  - {t: WIN-Canary, h: toggle}
+  - LEFT ARROW
+  - RIGHT
   MAC-Symbols:
   - ''
   - ''
@@ -104,7 +104,7 @@ layers:
   - '['
   - ']'
   - +
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - .
   - <
@@ -165,7 +165,7 @@ layers:
   - '2'
   - '3'
   - KP MULTIPLY
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - F10
   - F1
@@ -281,13 +281,13 @@ layers:
   - {t: I, h: LEFT ALT}
   - {t: A, h: LEFT GUI}
   - ''''
-  - AGr+ TAB
+  - ESCAPE
   - W
   - J
   - V
   - D
   - K
-  - MUTE
+  - {t: MAC-Canary, h: toggle}
   - Alt+ F4
   - X
   - H
@@ -304,7 +304,7 @@ layers:
   - {t: ENTER, h: WIN-Numbers}
   - {t: DEL, h: WIN-Symbols}
   - Sft+ TAB
-  - {t: MAC-Canary, h: toggle}
+  - AGr+ TAB
   WIN-Symbols:
   - ''
   - ''
@@ -476,8 +476,8 @@ layers:
   - ''
   - HOME
   - END
-  - ''
-  - ''
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
   - ''
   - ''
   - {type: held}
@@ -486,5 +486,5 @@ layers:
   - '&caps_word'
   - ENTER
   - DEL
-  - ''
-  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
