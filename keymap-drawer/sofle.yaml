@@ -1,6 +1,6 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
-  MAC-Canary:
+  mac:
   - ''
   - ''
   - ''
@@ -43,7 +43,7 @@ layers:
   - V
   - D
   - K
-  - {t: WIN-Canary, h: toggle}
+  - {t: windows, h: toggle}
   - Gui+ Q
   - X
   - H
@@ -53,15 +53,15 @@ layers:
   - ;
   - {t: Gui+ C, h: toggle}
   - Gui+ V
-  - {t: TAB, h: MAC-Navigation}
+  - {t: TAB, h: m-nav}
   - SPACE
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: MAC-Numbers}
-  - {t: DEL, h: MAC-Symbols}
+  - {t: ENTER, h: m-numbers}
+  - {t: DEL, h: m-symbols}
   - LEFT ARROW
   - RIGHT
-  MAC-Symbols:
+  m-symbols:
   - ''
   - ''
   - ''
@@ -122,7 +122,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  MAC-Numbers:
+  m-numbers:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -165,7 +165,7 @@ layers:
   - '2'
   - '3'
   - KP MULTIPLY
-  - ''
+  - '&sys_reset'
   - {t: ▽, type: trans}
   - F10
   - F1
@@ -183,7 +183,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  MAC-Navigation:
+  m-nav:
   - ''
   - ''
   - ''
@@ -244,7 +244,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
-  WIN-Canary:
+  windows:
   - ''
   - ''
   - ''
@@ -287,7 +287,7 @@ layers:
   - V
   - D
   - K
-  - {t: MAC-Canary, h: toggle}
+  - {t: mac, h: toggle}
   - Alt+ F4
   - X
   - H
@@ -297,15 +297,15 @@ layers:
   - ;
   - {t: Ctl+ C, h: toggle}
   - Ctl+ V
-  - {t: TAB, h: WIN-Navigation}
+  - {t: TAB, h: w-nav}
   - SPACE
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: WIN-Numbers}
-  - {t: DEL, h: WIN-Symbols}
+  - {t: ENTER, h: w-numbers}
+  - {t: DEL, h: w-symbols}
   - Sft+ TAB
   - AGr+ TAB
-  WIN-Symbols:
+  w-symbols:
   - ''
   - ''
   - ''
@@ -366,7 +366,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  WIN-Numbers:
+  w-numbers:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -409,7 +409,7 @@ layers:
   - '2'
   - '3'
   - KP MULTIPLY
-  - {t: ▽, type: trans}
+  - '&sys_reset'
   - {t: ▽, type: trans}
   - F10
   - F1
@@ -427,7 +427,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  WIN-Navigation:
+  w-nav:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
