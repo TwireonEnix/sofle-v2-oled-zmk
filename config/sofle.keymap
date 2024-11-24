@@ -62,9 +62,9 @@
 
             bindings = <
 &none             &none               &none           &none           &none             &none                                  &none        &none             &none           &none           &none               &none
-&kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                  &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
+&kp LC(UP_ARROW)  &kp W               &kp L           &kp Y           &kp P             &kp B                                  &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
 &kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                  &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
-&kp ESCAPE        &kp W               &kp J           &kp V           &kp D             &kp K      &to 4            &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
+&kp ESCAPE        &kp Q               &kp J           &kp V           &kp D             &kp K      &to 4            &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
                                       &kt LG(C)       &kp LG(V)       &lt 3 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC    &lt 2 ENTER  &lt 1 DEL         &kp LEFT_ARROW  &kp RIGHT
             >;
 
@@ -142,9 +142,9 @@
             label = "windows";
             bindings = <
 &none          &none           &none           &none               &none             &none                                   &none        &none             &none               &none           &none           &none
-&kp LG(TAB)    &kp Q           &kp L           &kp Y               &kp P             &kp B                                   &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
+&kp LG(TAB)    &kp W           &kp L           &kp Y               &kp P             &kp B                                   &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
 &kp RIGHT_ALT  &mt LEFT_GUI C  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                                   &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &kp SINGLE_QUOTE
-&kp ESCAPE     &kp W           &kp J           &kp V               &kp D             &kp K      &to 0            &kp LA(F4)  &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp SEMICOLON
+&kp ESCAPE     &kp Q           &kp J           &kp V               &kp D             &kp K      &to 0            &kp LA(F4)  &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp SEMICOLON
                                &kt LC(C)       &kp LC(V)           &lt 7 TAB         &kp SPACE  &kp BACKSPACE    &kp ESC     &lt 6 ENTER  &lt 5 DEL         &kp LS(TAB)         &kp RA(TAB)
             >;
 
