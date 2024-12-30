@@ -258,7 +258,7 @@ layers:
   - ''
   - ''
   - Gui+ TAB
-  - W
+  - Q
   - L
   - Y
   - P
@@ -282,7 +282,7 @@ layers:
   - {t: A, h: LEFT GUI}
   - ''''
   - ESCAPE
-  - Q
+  - W
   - J
   - V
   - D
