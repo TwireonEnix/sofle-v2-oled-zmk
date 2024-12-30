@@ -14,7 +14,7 @@ layers:
   - ''
   - ''
   - Ctl+ UP ARROW
-  - W
+  - Q
   - L
   - Y
   - P
@@ -38,7 +38,7 @@ layers:
   - {t: A, h: LEFT CONTROL}
   - ''''
   - ESCAPE
-  - Q
+  - W
   - J
   - V
   - D
@@ -53,12 +53,12 @@ layers:
   - ;
   - {t: Gui+ C, h: toggle}
   - Gui+ V
-  - {t: TAB, h: m-nav}
-  - SPACE
+  - TAB
+  - {t: SPACE, h: m-nav}
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: m-numbers}
-  - {t: DEL, h: m-symbols}
+  - {t: ENTER, h: m-symbols}
+  - {t: DEL, h: m-numbers}
   - LEFT ARROW
   - RIGHT
   m-symbols:
@@ -118,8 +118,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - ''
   - ''
   - ''
   m-numbers:
@@ -179,8 +179,8 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   m-nav:
@@ -236,8 +236,8 @@ layers:
   - {t: BT, h: '3'}
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   - '&caps_word'
   - {t: ▽, type: trans}
@@ -297,12 +297,12 @@ layers:
   - ;
   - {t: Ctl+ C, h: toggle}
   - Ctl+ V
-  - {t: TAB, h: w-nav}
-  - SPACE
+  - TAB
+  - {t: SPACE, h: w-nav}
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: w-numbers}
-  - {t: DEL, h: w-symbols}
+  - {t: ENTER, h: w-symbols}
+  - {t: DEL, h: w-numbers}
   - Sft+ TAB
   - AGr+ TAB
   w-symbols:
@@ -362,8 +362,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   w-numbers:
@@ -423,8 +423,8 @@ layers:
   - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   w-nav:
@@ -480,8 +480,8 @@ layers:
   - {t: BT, h: '3'}
   - ''
   - ''
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - '&caps_word'
   - ENTER
