@@ -242,8 +242,8 @@ layers:
   - '&caps_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - '&toMacBT'
+  - '&toWinBT'
   windows:
   - ''
   - ''
@@ -486,5 +486,5 @@ layers:
   - '&caps_word'
   - ENTER
   - DEL
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
+  - '&toMacBT'
+  - '&toWinBT'
