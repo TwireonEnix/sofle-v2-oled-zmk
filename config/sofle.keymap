@@ -45,6 +45,20 @@
             bindings = <&kp PERIOD &kp PERIOD &kp SLASH>;
             label = "UPDIRECTORY";
         };
+
+        toMacBT: toMacbt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0 &to 0>;
+            label = "TOMACBT";
+        };
+
+        toWinBT: toWinBT {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1 &to 4>;
+            label = "TOWINBT";
+        };
     };
 
     keymap {
@@ -134,7 +148,7 @@
 &none                 &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &none                                               &none                   &none           &kp PAGE_DOWN   &kp PG_UP     &none         &none
 &none                 &kp LEFT_CONTROL      &kp LEFT_ALT           &kp LEFT_GUI        &kp LEFT_SHIFT  &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &kp LA(LC(RIGHT))
 &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &bt BT_CLR    &none       &none                   &none           &kp HOME        &kp END       &bt BT_SEL 2  &bt BT_SEL 3
-                                            &none                  &none               &none           &none                     &none         &caps_word  &trans                  &trans          &bt BT_SEL 0    &bt BT_SEL 1
+                                            &none                  &none               &none           &none                     &none         &caps_word  &trans                  &trans          &toMacBT        &toWinBT
             >;
         };
 
@@ -190,7 +204,7 @@
 &none  &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &none             &none           &none                                &none               &none           &kp PAGE_DOWN   &kp PG_UP     &kp LC(NUMBER_8)  &none
 &none  &kp LEFT_GUI          &kp LEFT_ALT           &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(S))                        &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LG(RIGHT)
 &none  &none                 &kp K_PREVIOUS         &kp K_PLAY_PAUSE  &kp K_FORWARD   &none          &trans    &none       &none               &none           &kp HOME        &kp END       &bt BT_SEL 2      &bt BT_SEL 3
-                             &none                  &none             &trans          &trans         &trans    &caps_word  &kp ENTER           &kp DEL         &bt BT_SEL 0    &bt BT_SEL 1
+                             &none                  &none             &trans          &trans         &trans    &caps_word  &kp ENTER           &kp DEL         &toMacBT        &toWinBT
             >;
         };
     };
