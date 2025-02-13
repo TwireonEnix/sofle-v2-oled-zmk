@@ -13,7 +13,7 @@ layers:
   - ''
   - ''
   - ''
-  - Ctl+ UP ARROW
+  - Ctl+UP ARROW
   - Q
   - L
   - Y
@@ -24,7 +24,7 @@ layers:
   - O
   - U
   - /
-  - Gui+ SPACE
+  - Gui+SPACE
   - RIGHT ALT
   - {t: C, h: LEFT CONTROL}
   - {t: R, h: LEFT ALT}
@@ -44,15 +44,15 @@ layers:
   - D
   - K
   - {t: windows, h: toggle}
-  - Gui+ Q
+  - Gui+Q
   - X
   - H
   - ':'
   - ','
   - .
   - ;
-  - {t: Gui+ C, h: toggle}
-  - Gui+ V
+  - {t: Gui+C, h: toggle}
+  - Gui+V
   - TAB
   - {t: SPACE, h: m-nav}
   - BACKSPACE
@@ -80,7 +80,7 @@ layers:
   - '-'
   - '*'
   - '@'
-  - Alt+ 8
+  - Alt+8
   - '&'
   - '%'
   - ^
@@ -109,7 +109,7 @@ layers:
   - .
   - <
   - '>'
-  - Alt+ 3
+  - Alt+3
   - '|'
   - ''
   - ''
@@ -123,12 +123,12 @@ layers:
   - ''
   - ''
   m-numbers:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,10 +197,10 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Gui+Ctl+ LEFT
-  - Alt+Gui+Ctl+ RIGHT
-  - Gui+ LEFT ARROW
-  - Gui+ RIGHT
+  - Alt+Gui+Ctl+LEFT
+  - Alt+Gui+Ctl+RIGHT
+  - Gui+LEFT ARROW
+  - Gui+RIGHT
   - ''
   - ''
   - ''
@@ -213,13 +213,13 @@ layers:
   - LEFT ALT
   - LEFT GUI
   - LEFT SHIFT
-  - Ctl+Sft+Gui+ 4
-  - Alt+Ctl+ LEFT ARROW
+  - Ctl+Sft+Gui+4
+  - Alt+Ctl+LEFT ARROW
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
   - RIGHT
-  - Alt+Ctl+ RIGHT
+  - Alt+Ctl+RIGHT
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
   - PREVIOUS
@@ -257,7 +257,7 @@ layers:
   - ''
   - ''
   - ''
-  - Gui+ TAB
+  - Gui+TAB
   - Q
   - L
   - Y
@@ -268,7 +268,7 @@ layers:
   - O
   - U
   - /
-  - Alt+ SPACE
+  - Alt+SPACE
   - RIGHT ALT
   - {t: C, h: LEFT GUI}
   - {t: R, h: LEFT ALT}
@@ -288,23 +288,23 @@ layers:
   - D
   - K
   - {t: mac, h: toggle}
-  - Alt+ F4
+  - Alt+F4
   - X
   - H
   - ':'
   - ','
   - .
   - ;
-  - {t: Ctl+ C, h: toggle}
-  - Ctl+ V
+  - {t: Ctl+C, h: toggle}
+  - Ctl+V
   - TAB
   - {t: SPACE, h: w-nav}
   - BACKSPACE
   - ESC
   - {t: ENTER, h: w-symbols}
   - {t: DEL, h: w-numbers}
-  - Sft+ TAB
-  - AGr+ TAB
+  - Sft+TAB
+  - AltGr+TAB
   w-symbols:
   - ''
   - ''
@@ -324,7 +324,7 @@ layers:
   - '-'
   - '*'
   - '@'
-  - Alt+ 8
+  - Alt+8
   - '&'
   - '%'
   - ^
@@ -367,12 +367,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   w-numbers:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -428,12 +428,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   w-nav:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - ''
   - ''
   - ''
@@ -441,8 +435,14 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Gui+Ctl+ LEFT
-  - Alt+Gui+Ctl+ RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+Gui+Ctl+LEFT
+  - Alt+Gui+Ctl+RIGHT
   - ''
   - ''
   - ''
@@ -450,20 +450,20 @@ layers:
   - ''
   - PAGE DOWN
   - PG UP
-  - Ctl+ 8
+  - Ctl+8
   - ''
   - ''
   - LEFT GUI
   - LEFT ALT
   - LEFT CONTROL
   - LEFT SHIFT
-  - Sft+Gui+ S
-  - Gui+ LEFT ARROW
+  - Sft+Gui+S
+  - Gui+LEFT ARROW
   - LEFT ARROW
   - DOWN ARROW
   - UP ARROW
   - RIGHT
-  - Gui+ RIGHT
+  - Gui+RIGHT
   - ''
   - ''
   - PREVIOUS
