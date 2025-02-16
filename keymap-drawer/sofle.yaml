@@ -37,7 +37,7 @@ layers:
   - {t: I, h: LEFT ALT}
   - {t: A, h: LEFT CONTROL}
   - ''''
-  - ESCAPE
+  - {t: ENTER, h: ESCAPE}
   - W
   - J
   - V
@@ -281,7 +281,7 @@ layers:
   - {t: I, h: LEFT ALT}
   - {t: A, h: LEFT GUI}
   - ''''
-  - ESCAPE
+  - {t: ENTER, h: ESCAPE}
   - W
   - J
   - V
@@ -443,8 +443,8 @@ layers:
   - ''
   - Alt+Gui+Ctl+LEFT
   - Alt+Gui+Ctl+RIGHT
-  - ''
-  - ''
+  - Alt+LEFT
+  - Alt+RIGHT
   - ''
   - ''
   - ''
@@ -468,7 +468,7 @@ layers:
   - ''
   - PREVIOUS
   - PLAY PAUSE
-  - FORWARD
+  - AC FORWARD
   - ''
   - {t: ▽, type: trans}
   - ''
