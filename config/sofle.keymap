@@ -16,7 +16,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <230>;
+    tapping-term-ms = <205>;
 };
 
 / {
@@ -78,7 +78,7 @@
 &none             &none               &none           &none           &none             &none                                    &none        &none             &none           &none           &none               &none
 &kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                    &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
 &kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                    &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
-&kp ESCAPE        &kp W               &kp J           &kp V           &kp D             &kp K        &to 4            &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
+&mt ESCAPE ENTER  &kp W               &kp J           &kp V           &kp D             &kp K        &to 4            &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
                                       &kt LG(C)       &kp LG(V)       &kp TAB           &lt 3 SPACE  &kp BACKSPACE    &kp ESC    &lt 1 ENTER  &lt 2 DEL         &kp LEFT_ARROW  &kp RIGHT
             >;
 
@@ -155,11 +155,11 @@
         WIN-Canary {
             label = "windows";
             bindings = <
-&none          &none           &none           &none               &none             &none                                     &none        &none             &none               &none           &none           &none
-&kp LG(TAB)    &kp Q           &kp L           &kp Y               &kp P             &kp B                                     &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
-&kp RIGHT_ALT  &mt LEFT_GUI C  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                                     &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &kp SINGLE_QUOTE
-&kp ESCAPE     &kp W           &kp J           &kp V               &kp D             &kp K        &to 0            &kp LA(F4)  &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp SEMICOLON
-                               &kt LC(C)       &kp LC(V)           &kp TAB           &lt 7 SPACE  &kp BACKSPACE    &kp ESC     &lt 5 ENTER  &lt 6 DEL         &kp LS(TAB)         &kp RA(TAB)
+&none             &none           &none           &none               &none             &none                                     &none        &none             &none               &none           &none           &none
+&kp LG(TAB)       &kp Q           &kp L           &kp Y               &kp P             &kp B                                     &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
+&kp RIGHT_ALT     &mt LEFT_GUI C  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                                     &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W           &kp J           &kp V               &kp D             &kp K        &to 0            &kp LA(F4)  &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp SEMICOLON
+                                  &kt LC(C)       &kp LC(V)           &kp TAB           &lt 7 SPACE  &kp BACKSPACE    &kp ESC     &lt 5 ENTER  &lt 6 DEL         &kp LS(TAB)         &kp RA(TAB)
             >;
 
             sensor-bindings =
@@ -200,11 +200,11 @@
         WIN-Navigation {
             label = "w-nav";
             bindings = <
-&none  &none                 &none                  &none             &none           &none                                &none               &none           &none           &none         &none             &none
-&none  &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &none             &none           &none                                &none               &none           &kp PAGE_DOWN   &kp PG_UP     &kp LC(NUMBER_8)  &none
-&none  &kp LEFT_GUI          &kp LEFT_ALT           &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp LS(LG(S))                        &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LG(RIGHT)
-&none  &none                 &kp K_PREVIOUS         &kp K_PLAY_PAUSE  &kp K_FORWARD   &none          &trans    &none       &none               &none           &kp HOME        &kp END       &bt BT_SEL 2      &bt BT_SEL 3
-                             &none                  &none             &trans          &trans         &trans    &caps_word  &kp ENTER           &kp DEL         &toMacBT        &toWinBT
+&none  &none                 &none                  &none             &none             &none                                &none               &none           &none           &none         &none             &none
+&none  &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LA(LEFT)      &kp LA(RIGHT)     &none                                &none               &none           &kp PAGE_DOWN   &kp PG_UP     &kp LC(NUMBER_8)  &none
+&none  &kp LEFT_GUI          &kp LEFT_ALT           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp LS(LG(S))                        &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LG(RIGHT)
+&none  &none                 &kp C_PREVIOUS         &kp C_PLAY_PAUSE  &kp C_AC_FORWARD  &none          &trans    &none       &none               &none           &kp HOME        &kp END       &bt BT_SEL 2      &bt BT_SEL 3
+                             &none                  &none             &trans            &trans         &trans    &caps_word  &kp ENTER           &kp DEL         &toMacBT        &toWinBT
             >;
         };
     };
