@@ -43,7 +43,7 @@ layers:
   - V
   - D
   - K
-  - {t: windows, h: toggle}
+  - {t: ' win', h: toggle}
   - Gui+Q
   - X
   - H
@@ -51,17 +51,17 @@ layers:
   - ','
   - .
   - ;
-  - {t: Gui+C, h: toggle}
+  - Gui+C
   - Gui+V
   - TAB
   - {t: SPACE, h: m-nav}
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: m-symbols}
-  - {t: DEL, h: m-numbers}
+  - {t: ENTER, h: m-sym}
+  - {t: DEL, h: m-num}
   - LEFT ARROW
   - RIGHT
-  m-symbols:
+  m-sym:
   - ''
   - ''
   - ''
@@ -122,7 +122,7 @@ layers:
   - ''
   - ''
   - ''
-  m-numbers:
+  m-num:
   - ''
   - ''
   - ''
@@ -244,7 +244,7 @@ layers:
   - {t: ▽, type: trans}
   - '&toMacBT'
   - '&toWinBT'
-  windows:
+  ' win':
   - ''
   - ''
   - ''
@@ -295,17 +295,17 @@ layers:
   - ','
   - .
   - ;
-  - {t: Ctl+C, h: toggle}
+  - Ctl+C
   - Ctl+V
   - TAB
   - {t: SPACE, h: w-nav}
   - BACKSPACE
   - ESC
-  - {t: ENTER, h: w-symbols}
-  - {t: DEL, h: w-numbers}
+  - {t: ENTER, h: w-sym}
+  - {t: DEL, h: w-num}
   - Sft+TAB
   - AltGr+TAB
-  w-symbols:
+  w-sym:
   - ''
   - ''
   - ''
@@ -366,7 +366,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  w-numbers:
+  w-num:
   - ''
   - ''
   - ''

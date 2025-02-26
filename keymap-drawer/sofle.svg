@@ -300,9 +300,8 @@ path.combo {
 </g>
 <g transform="translate(371, 210)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#windows">
-<text x="0" y="0" class="key tap layer-activator">windows</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">win</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(525, 210)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -335,7 +334,6 @@ path.combo {
 <g transform="translate(140, 259)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Gui+C</text>
-<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(196, 252)" class="key keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -362,14 +360,14 @@ path.combo {
 <g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#m-symbols">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">m-symbols</tspan></text>
+<a href="#m-sym">
+<text x="0" y="24" class="key hold layer-activator">m-sym</text>
 </a></g>
 <g transform="translate(644, 259)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
-<a href="#m-numbers">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">m-numbers</tspan></text>
+<a href="#m-num">
+<text x="0" y="24" class="key hold layer-activator">m-num</text>
 </a></g>
 <g transform="translate(700, 252)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -383,8 +381,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 398)" class="layer-m-symbols">
-<text x="0" y="28" class="label" id="m-symbols">m-symbols:</text>
+<g transform="translate(30, 398)" class="layer-m-sym">
+<text x="0" y="28" class="label" id="m-sym">m-sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -603,8 +601,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 795)" class="layer-m-numbers">
-<text x="0" y="28" class="label" id="m-numbers">m-numbers:</text>
+<g transform="translate(30, 795)" class="layer-m-num">
+<text x="0" y="28" class="label" id="m-num">m-num:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1114,8 +1112,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1590)" class="layer-windows">
-<text x="0" y="28" class="label" id="windows">windows:</text>
+<g transform="translate(30, 1590)" class="layer- win">
+<text x="0" y="28" class="label" id="win"> win:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1323,7 +1321,6 @@ path.combo {
 <g transform="translate(140, 259)" class="key keypos-50">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">Ctl+C</text>
-<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(196, 252)" class="key keypos-51">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1350,14 +1347,14 @@ path.combo {
 <g transform="translate(580, 274) rotate(-22.5)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#w-symbols">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">w-symbols</tspan></text>
+<a href="#w-sym">
+<text x="0" y="24" class="key hold layer-activator">w-sym</text>
 </a></g>
 <g transform="translate(644, 259)" class="key keypos-57">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">DEL</text>
-<a href="#w-numbers">
-<text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 78%">w-numbers</tspan></text>
+<a href="#w-num">
+<text x="0" y="24" class="key hold layer-activator">w-num</text>
 </a></g>
 <g transform="translate(700, 252)" class="key keypos-58">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1371,8 +1368,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1988)" class="layer-w-symbols">
-<text x="0" y="28" class="label" id="w-symbols">w-symbols:</text>
+<g transform="translate(30, 1988)" class="layer-w-sym">
+<text x="0" y="28" class="label" id="w-sym">w-sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1595,8 +1592,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 2385)" class="layer-w-numbers">
-<text x="0" y="28" class="label" id="w-numbers">w-numbers:</text>
+<g transform="translate(30, 2385)" class="layer-w-num">
+<text x="0" y="28" class="label" id="w-num">w-num:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 63)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
