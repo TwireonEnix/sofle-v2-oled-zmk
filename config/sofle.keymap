@@ -64,7 +64,7 @@
         compatible = "zmk,keymap";
 
         MAC-Canary {
-            label = "mac";
+            label = " mac";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -87,7 +87,7 @@
         };
 
         MAC-Symbols {
-            label = "m-sym";
+            label = "symb-m";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -111,7 +111,7 @@
         };
 
         MAC-Numbers {
-            label = "m-num";
+            label = "numb-m";
 
             // ------------------------------------------------------------------------------------------------------------
             // | BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
@@ -141,7 +141,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            label = "m-nav";
+            label = " nav-m";
             bindings = <
 &none                 &none                 &none                  &none               &none           &none                                               &none                   &none           &none           &none         &none         &none
 &none                 &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &none                                               &none                   &none           &kp PAGE_DOWN   &kp PG_UP     &none         &none
@@ -167,7 +167,7 @@
         };
 
         WIN-Symbols {
-            label = "w-sym";
+            label = "symb-w";
             bindings = <
 &none  &none          &none         &none                 &none                  &none                        &none             &none          &none             &none       &none              &none
 &none  &addSurrounds  &kp UNDER     &kp MINUS             &kp ASTRK              &kp AT                       &kp LA(NUMBER_8)  &kp AMPERSAND  &kp PRCNT         &kp CARET   &kp GRAVE          &none
@@ -182,7 +182,7 @@
         };
 
         WIN-Numbers {
-            label = "w-num";
+            label = "numb-w";
             bindings = <
 &none   &none          &none                  &none                      &none                    &none                                      &trans   &trans             &trans               &trans           &trans        &trans
 &trans  &kp KP_DIVIDE  &kp N7                 &kp N8                     &kp N9                   &kp KP_PLUS                                &kp F12  &kp F7             &kp F8               &kp F9           &none         &trans
@@ -197,7 +197,7 @@
         };
 
         WIN-Navigation {
-            label = "w-nav";
+            label = " nav-w";
             bindings = <
 &none  &none                 &none                  &none             &none             &none                                &none               &none           &none           &none         &none             &none
 &none  &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LA(LEFT)      &kp LA(RIGHT)     &none                                &none               &none           &kp PAGE_DOWN   &kp PG_UP     &kp LC(NUMBER_8)  &none
