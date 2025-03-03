@@ -74,11 +74,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&none             &none               &none           &none           &none             &none                                    &none        &none             &none           &none           &none               &none
-&kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                    &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
-&kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                    &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
-&mt ESCAPE ENTER  &kp W               &kp J           &kp V           &kp D             &kp K        &to 4            &kp LG(Q)  &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp SEMICOLON
-                                      &kp LG(C)       &kp LG(V)       &kp TAB           &lt 3 SPACE  &kp BACKSPACE    &kp ESC    &lt 1 ENTER  &lt 2 DEL         &kp LEFT_ARROW  &kp RIGHT
+&none             &none               &none           &none           &none             &none                                       &none        &none             &none           &none           &none               &none
+&kp LC(UP_ARROW)  &kp Q               &kp L           &kp Y           &kp P             &kp B                                       &kp Z        &kp F             &kp O           &kp U           &kp SLASH           &kp LG(SPACE)
+&kp RIGHT_ALT     &mt LEFT_CONTROL C  &mt LEFT_ALT R  &mt LEFT_GUI S  &mt LEFT_SHIFT T  &kp G                                       &kp M        &mt LEFT_SHIFT N  &mt LEFT_GUI E  &mt LEFT_ALT I  &mt LEFT_CONTROL A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W               &kp J           &kp V           &kp D             &kp K        &to 4            &none         &kp X        &kp H             &kp COLON       &kp COMMA       &kp PERIOD          &kp LG(Q)
+                                      &none           &none           &kp TAB           &lt 3 SPACE  &kp BACKSPACE    &lt 2 ESCAPE  &lt 1 ENTER  &kp DELETE        &none           &none
             >;
 
             sensor-bindings =
@@ -101,7 +101,7 @@
 &none  &none          &none         &none                 &none                  &none                        &none             &none          &none             &none             &none              &none
 &none  &addSurrounds  &kp UNDER     &kp MINUS             &kp ASTRK              &kp AT                       &kp LA(NUMBER_8)  &kp AMPERSAND  &kp PRCNT         &kp CARET         &kp GRAVE          &none
 &none  &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                    &upDirectory      &kp LBRC       &kp RBRC          &kp DOLLAR        &kp DOUBLE_QUOTES  &none
-&none  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &none     &trans  &kp PERIOD        &kp LESS_THAN  &kp GREATER_THAN  &kp LA(NUMBER_3)  &kp PIPE           &none
+&none  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &none     &trans  &kp SEMICOLON     &kp LESS_THAN  &kp GREATER_THAN  &kp LA(NUMBER_3)  &kp PIPE           &none
                       &none         &none                 &jsfn                  &trans     &trans    &trans  &trans            &none          &none             &none
             >;
 
@@ -125,7 +125,7 @@
 &trans  &kp KP_DIVIDE  &kp N7                 &kp N8                 &kp N9                   &kp KP_PLUS                                &kp F12  &kp F7             &kp F8           &kp F9           &none             &trans
 &trans  &kp LCTRL      &mt LEFT_ALT NUMBER_4  &mt LEFT_GUI NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp KP_MINUS                               &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_GUI F5  &mt LEFT_ALT F6  &kp LEFT_CONTROL  &none
 &trans  &kp COMMA      &kp N1                 &kp N2                 &kp N3                   &kp KP_MULTIPLY  &sys_reset    &sys_reset  &kp F10  &kp F1             &kp F2           &kp F3           &trans            &trans
-                       &trans                 &trans                 &kp DOT                  &kp N0           &trans        &trans      &trans   &trans             &trans           &trans
+                       &none                  &none                  &kp DOT                  &kp N0           &trans        &trans      &trans   &trans             &trans           &trans
             >;
 
             sensor-bindings =
@@ -146,7 +146,7 @@
 &none                 &none                 &none                  &none               &none           &none                                               &none                   &none           &none           &none         &none         &none
 &none                 &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &none                                               &none                   &none           &kp PAGE_DOWN   &kp PG_UP     &none         &none
 &none                 &kp LEFT_CONTROL      &kp LEFT_ALT           &kp LEFT_GUI        &kp LEFT_SHIFT  &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &kp LA(LC(RIGHT))
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &bt BT_CLR    &none       &none                   &none           &kp HOME        &kp END       &bt BT_SEL 2  &bt BT_SEL 3
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &bt BT_CLR    &none       &none                   &none           &kp HOME        &kp END       &bt BT_SEL 2  &none
                                             &none                  &none               &none           &none                     &none         &caps_word  &trans                  &trans          &toMacBT        &toWinBT
             >;
         };
@@ -154,11 +154,11 @@
         WIN-Canary {
             label = " win";
             bindings = <
-&none             &none           &none           &none               &none             &none                                     &none        &none             &none               &none           &none           &none
-&kp LG(TAB)       &kp Q           &kp L           &kp Y               &kp P             &kp B                                     &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
-&kp RIGHT_ALT     &mt LEFT_GUI C  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                                     &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &kp SINGLE_QUOTE
-&mt ESCAPE ENTER  &kp W           &kp J           &kp V               &kp D             &kp K        &to 0            &kp LA(F4)  &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp SEMICOLON
-                                  &kp LC(C)       &kp LC(V)           &kp TAB           &lt 7 SPACE  &kp BACKSPACE    &kp ESC     &lt 5 ENTER  &lt 6 DEL         &kp LS(TAB)         &kp RA(TAB)
+&none             &none           &none           &none               &none             &none                                       &none        &none             &none               &none           &none           &none
+&kp LG(TAB)       &kp Q           &kp L           &kp Y               &kp P             &kp B                                       &kp Z        &kp F             &kp O               &kp U           &kp SLASH       &kp LA(SPACE)
+&kp RIGHT_ALT     &mt LEFT_GUI C  &mt LEFT_ALT R  &mt LEFT_CONTROL S  &mt LEFT_SHIFT T  &kp G                                       &kp M        &mt LEFT_SHIFT N  &mt LEFT_CONTROL E  &mt LEFT_ALT I  &mt LEFT_GUI A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W           &kp J           &kp V               &kp D             &kp K        &to 0            &kp LS(TAB)   &kp X        &kp H             &kp COLON           &kp COMMA       &kp PERIOD      &kp LA(F4)
+                                  &none           &none               &kp TAB           &lt 7 SPACE  &kp BACKSPACE    &lt 6 ESCAPE  &lt 5 ENTER  &kp DELETE        &none               &none
             >;
 
             sensor-bindings =
@@ -172,7 +172,7 @@
 &none  &none          &none         &none                 &none                  &none                        &none             &none          &none             &none       &none              &none
 &none  &addSurrounds  &kp UNDER     &kp MINUS             &kp ASTRK              &kp AT                       &kp LA(NUMBER_8)  &kp AMPERSAND  &kp PRCNT         &kp CARET   &kp GRAVE          &none
 &none  &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                    &upDirectory      &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
-&none  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &trans    &trans  &kp PERIOD        &kp LESS_THAN  &kp GREATER_THAN  &kp HASH    &kp PIPE           &none
+&none  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &trans    &trans  &kp SEMI          &kp LESS_THAN  &kp GREATER_THAN  &kp HASH    &kp PIPE           &none
                       &none         &none                 &jsfn                  &trans     &trans    &trans  &trans            &trans         &trans            &trans
             >;
 
