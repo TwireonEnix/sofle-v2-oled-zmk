@@ -44,23 +44,23 @@ layers:
   - D
   - K
   - {t: ' win', h: toggle}
-  - Gui+Q
+  - ''
   - X
   - H
   - ':'
   - ','
   - .
-  - ;
-  - Gui+C
-  - Gui+V
+  - Gui+Q
+  - ''
+  - ''
   - TAB
   - {t: SPACE, h: ' nav-m'}
   - BACKSPACE
-  - ESC
+  - {t: ESCAPE, h: numb-m}
   - {t: ENTER, h: symb-m}
-  - {t: DEL, h: numb-m}
-  - LEFT ARROW
-  - RIGHT
+  - DELETE
+  - ''
+  - ''
   symb-m:
   - ''
   - ''
@@ -106,7 +106,7 @@ layers:
   - +
   - ''
   - {t: ▽, type: trans}
-  - .
+  - ;
   - <
   - '>'
   - Alt+3
@@ -173,14 +173,14 @@ layers:
   - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - .
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ' nav-m':
@@ -233,7 +233,7 @@ layers:
   - HOME
   - END
   - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
+  - ''
   - ''
   - ''
   - ''
@@ -288,23 +288,23 @@ layers:
   - D
   - K
   - {t: ' mac', h: toggle}
-  - Alt+F4
+  - Sft+TAB
   - X
   - H
   - ':'
   - ','
   - .
-  - ;
-  - Ctl+C
-  - Ctl+V
+  - Alt+F4
+  - ''
+  - ''
   - TAB
   - {t: SPACE, h: ' nav-w'}
   - BACKSPACE
-  - ESC
+  - {t: ESCAPE, h: numb-w}
   - {t: ENTER, h: symb-w}
-  - {t: DEL, h: numb-w}
-  - Sft+TAB
-  - AltGr+TAB
+  - DELETE
+  - ''
+  - ''
   symb-w:
   - ''
   - ''
@@ -350,7 +350,7 @@ layers:
   - +
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - .
+  - ;
   - <
   - '>'
   - '#'
@@ -422,9 +422,9 @@ layers:
   - .
   - '0'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   ' nav-w':
