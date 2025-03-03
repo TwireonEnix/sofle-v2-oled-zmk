@@ -181,8 +181,8 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   ' nav-m':
   - ''
   - ''
@@ -227,7 +227,7 @@ layers:
   - FORWARD
   - ''
   - BT CLR
-  - ''
+  - '&toWinBT'
   - ''
   - ''
   - HOME
@@ -242,8 +242,8 @@ layers:
   - '&caps_word'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&toMacBT'
-  - '&toWinBT'
+  - ''
+  - ''
   ' win':
   - ''
   - ''
@@ -364,8 +364,8 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   numb-w:
   - ''
   - ''
@@ -409,15 +409,15 @@ layers:
   - '2'
   - '3'
   - KP MULTIPLY
-  - '&sys_reset'
-  - '&sys_reset'
+  - ''
+  - ''
   - F10
   - F1
   - F2
   - F3
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
   - {t: ▽, type: trans}
   - .
   - '0'
@@ -471,7 +471,7 @@ layers:
   - AC FORWARD
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - '&toMacBT'
   - ''
   - ''
   - HOME
@@ -486,5 +486,5 @@ layers:
   - '&caps_word'
   - ENTER
   - DEL
-  - '&toMacBT'
-  - '&toWinBT'
+  - ''
+  - ''
