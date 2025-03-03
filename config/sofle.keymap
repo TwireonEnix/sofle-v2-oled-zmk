@@ -125,7 +125,7 @@
 &trans  &kp KP_DIVIDE  &kp N7                 &kp N8                 &kp N9                   &kp KP_PLUS                                &kp F12  &kp F7             &kp F8           &kp F9           &none             &trans
 &trans  &kp LCTRL      &mt LEFT_ALT NUMBER_4  &mt LEFT_GUI NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp KP_MINUS                               &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_GUI F5  &mt LEFT_ALT F6  &kp LEFT_CONTROL  &none
 &trans  &kp COMMA      &kp N1                 &kp N2                 &kp N3                   &kp KP_MULTIPLY  &sys_reset    &sys_reset  &kp F10  &kp F1             &kp F2           &kp F3           &trans            &trans
-                       &none                  &none                  &kp DOT                  &kp N0           &trans        &trans      &trans   &trans             &trans           &trans
+                       &none                  &none                  &kp DOT                  &kp N0           &trans        &trans      &trans   &trans             &none            &none
             >;
 
             sensor-bindings =
@@ -146,8 +146,8 @@
 &none                 &none                 &none                  &none               &none           &none                                               &none                   &none           &none           &none         &none         &none
 &none                 &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &none                                               &none                   &none           &kp PAGE_DOWN   &kp PG_UP     &none         &none
 &none                 &kp LEFT_CONTROL      &kp LEFT_ALT           &kp LEFT_GUI        &kp LEFT_SHIFT  &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT     &kp LA(LC(RIGHT))
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &bt BT_CLR    &none       &none                   &none           &kp HOME        &kp END       &bt BT_SEL 2  &none
-                                            &none                  &none               &none           &none                     &none         &caps_word  &trans                  &trans          &toMacBT        &toWinBT
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_PREVIOUS         &kp K_PLAY_PAUSE    &kp K_FORWARD   &none                     &bt BT_CLR    &toWinBT    &none                   &none           &kp HOME        &kp END       &bt BT_SEL 2  &none
+                                            &none                  &none               &none           &none                     &none         &caps_word  &trans                  &trans          &none           &none
             >;
         };
 
@@ -173,7 +173,7 @@
 &none  &addSurrounds  &kp UNDER     &kp MINUS             &kp ASTRK              &kp AT                       &kp LA(NUMBER_8)  &kp AMPERSAND  &kp PRCNT         &kp CARET   &kp GRAVE          &none
 &none  &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL                    &upDirectory      &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
 &none  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS   &trans    &trans  &kp SEMI          &kp LESS_THAN  &kp GREATER_THAN  &kp HASH    &kp PIPE           &none
-                      &none         &none                 &jsfn                  &trans     &trans    &trans  &trans            &trans         &trans            &trans
+                      &none         &none                 &jsfn                  &trans     &trans    &trans  &trans            &trans         &none             &none
             >;
 
             sensor-bindings =
@@ -184,11 +184,11 @@
         WIN-Numbers {
             label = "numb-w";
             bindings = <
-&none   &none          &none                  &none                      &none                    &none                                      &trans   &trans             &trans               &trans           &trans        &trans
-&trans  &kp KP_DIVIDE  &kp N7                 &kp N8                     &kp N9                   &kp KP_PLUS                                &kp F12  &kp F7             &kp F8               &kp F9           &none         &trans
-&trans  &kp LEFT_GUI   &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp KP_MINUS                               &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_CONTROL F5  &mt LEFT_ALT F6  &kp LEFT_GUI  &none
-&trans  &kp COMMA      &kp N1                 &kp N2                     &kp N3                   &kp KP_MULTIPLY  &sys_reset    &sys_reset  &kp F10  &kp F1             &kp F2               &kp F3           &trans        &trans
-                       &trans                 &trans                     &kp DOT                  &kp N0           &trans        &trans      &trans   &trans             &trans               &trans
+&none   &none          &none                  &none                      &none                    &none                              &trans   &trans             &trans               &trans           &trans        &trans
+&trans  &kp KP_DIVIDE  &kp N7                 &kp N8                     &kp N9                   &kp KP_PLUS                        &kp F12  &kp F7             &kp F8               &kp F9           &none         &trans
+&trans  &kp LEFT_GUI   &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp KP_MINUS                       &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_CONTROL F5  &mt LEFT_ALT F6  &kp LEFT_GUI  &none
+&trans  &kp COMMA      &kp N1                 &kp N2                     &kp N3                   &kp KP_MULTIPLY  &none     &none   &kp F10  &kp F1             &kp F2               &kp F3           &trans        &trans
+                       &none                  &trans                     &kp DOT                  &kp N0           &trans    &trans  &trans   &trans             &trans               &trans
             >;
 
             sensor-bindings =
@@ -202,8 +202,8 @@
 &none  &none                 &none                  &none             &none             &none                                &none               &none           &none           &none         &none             &none
 &none  &kp LA(LG(LC(LEFT)))  &kp LA(LG(LC(RIGHT)))  &kp LA(LEFT)      &kp LA(RIGHT)     &none                                &none               &none           &kp PAGE_DOWN   &kp PG_UP     &kp LC(NUMBER_8)  &none
 &none  &kp LEFT_GUI          &kp LEFT_ALT           &kp LEFT_CONTROL  &kp LEFT_SHIFT    &kp LS(LG(S))                        &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LG(RIGHT)
-&none  &none                 &kp C_PREVIOUS         &kp C_PLAY_PAUSE  &kp C_AC_FORWARD  &none          &trans    &none       &none               &none           &kp HOME        &kp END       &bt BT_SEL 2      &bt BT_SEL 3
-                             &none                  &none             &trans            &trans         &trans    &caps_word  &kp ENTER           &kp DEL         &toMacBT        &toWinBT
+&none  &none                 &kp C_PREVIOUS         &kp C_PLAY_PAUSE  &kp C_AC_FORWARD  &none          &trans    &toMacBT    &none               &none           &kp HOME        &kp END       &bt BT_SEL 2      &bt BT_SEL 3
+                             &none                  &none             &trans            &trans         &trans    &caps_word  &kp ENTER           &kp DEL         &none           &none
             >;
         };
     };
