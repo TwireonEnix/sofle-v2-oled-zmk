@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: sofle/rev1}
+layout: {zmk_keyboard: sofle}
 layers:
   ' mac':
   - ''
@@ -40,208 +40,25 @@ layers:
   - {t: ENTER, h: ESCAPE}
   - W
   - J
-  - V
-  - D
+  - {t: V, h: Gui+C}
+  - {t: D, h: Gui+V}
   - K
-  - {t: ' win', h: toggle}
-  - ''
+  - '&toWinBT'
+  - BT NXT
   - X
   - H
   - ':'
   - ','
   - .
-  - Gui+Q
+  - {t: DELETE, h: Gui+Q}
   - ''
   - ''
-  - TAB
-  - {t: SPACE, h: ' nav-m'}
+  - {t: TAB, h: ' nav-m'}
+  - SPACE
   - BACKSPACE
-  - {t: ESCAPE, h: numb-m}
-  - {t: ENTER, h: symb-m}
+  - {t: ESCAPE, h: symb}
+  - {t: ENTER, h: numb-m}
   - DELETE
-  - ''
-  - ''
-  symb-m:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&addSurrounds'
-  - _
-  - '-'
-  - '*'
-  - '@'
-  - Alt+8
-  - '&'
-  - '%'
-  - ^
-  - '`'
-  - ''
-  - ''
-  - \
-  - '?'
-  - (
-  - )
-  - '='
-  - '&upDirectory'
-  - '{'
-  - '}'
-  - $
-  - '"'
-  - ''
-  - ''
-  - '~'
-  - '!'
-  - '['
-  - ']'
-  - +
-  - ''
-  - {t: ▽, type: trans}
-  - ;
-  - <
-  - '>'
-  - Alt+3
-  - '|'
-  - ''
-  - ''
-  - ''
-  - '&jsfn'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  numb-m:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - KP DIVIDE
-  - '7'
-  - '8'
-  - '9'
-  - KP PLUS
-  - F12
-  - F7
-  - F8
-  - F9
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LCTRL
-  - {t: '4', h: LEFT ALT}
-  - {t: '5', h: LEFT GUI}
-  - {t: '6', h: LEFT SHIFT}
-  - KP MINUS
-  - F11
-  - {t: F4, h: LEFT SHIFT}
-  - {t: F5, h: LEFT GUI}
-  - {t: F6, h: LEFT ALT}
-  - LEFT CONTROL
-  - ''
-  - {t: ▽, type: trans}
-  - ','
-  - '1'
-  - '2'
-  - '3'
-  - KP MULTIPLY
-  - '&sys_reset'
-  - '&sys_reset'
-  - F10
-  - F1
-  - F2
-  - F3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - .
-  - '0'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  ' nav-m':
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Alt+Gui+Ctl+LEFT
-  - Alt+Gui+Ctl+RIGHT
-  - Gui+LEFT ARROW
-  - Gui+RIGHT
-  - ''
-  - ''
-  - ''
-  - PAGE DOWN
-  - PG UP
-  - ''
-  - ''
-  - ''
-  - LEFT CONTROL
-  - LEFT ALT
-  - LEFT GUI
-  - LEFT SHIFT
-  - Ctl+Sft+Gui+4
-  - Alt+Ctl+LEFT ARROW
-  - LEFT ARROW
-  - DOWN ARROW
-  - UP ARROW
-  - RIGHT
-  - Alt+Ctl+RIGHT
-  - BRIGHTNESS DEC
-  - BRIGHTNESS INC
-  - PREVIOUS
-  - PLAY PAUSE
-  - FORWARD
-  - ''
-  - BT CLR
-  - '&toWinBT'
-  - ''
-  - ''
-  - HOME
-  - END
-  - {t: BT, h: '2'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - '&caps_word'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
   - ''
   ' win':
@@ -284,85 +101,146 @@ layers:
   - {t: ENTER, h: ESCAPE}
   - W
   - J
-  - V
-  - D
+  - {t: V, h: Ctl+C}
+  - {t: D, h: Ctl+V}
   - K
-  - {t: ' mac', h: toggle}
-  - Sft+TAB
+  - '&toMacBT'
+  - BT NXT
   - X
   - H
   - ':'
   - ','
   - .
-  - Alt+F4
+  - {t: DELETE, h: Alt+F4}
   - ''
   - ''
-  - TAB
-  - {t: SPACE, h: ' nav-w'}
+  - {t: TAB, h: ' nav-w'}
+  - SPACE
   - BACKSPACE
-  - {t: ESCAPE, h: numb-w}
-  - {t: ENTER, h: symb-w}
+  - {t: ESCAPE, h: symb}
+  - {t: ENTER, h: numb-w}
   - DELETE
   - ''
   - ''
-  symb-w:
+  numb-m:
   - ''
   - ''
   - ''
   - ''
   - ''
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&addSurrounds'
-  - _
-  - '-'
-  - '*'
-  - '@'
-  - Alt+8
-  - '&'
-  - '%'
-  - ^
-  - '`'
-  - ''
-  - ''
-  - \
-  - '?'
-  - (
-  - )
-  - '='
-  - '&upDirectory'
-  - '{'
-  - '}'
-  - $
-  - '"'
-  - ''
-  - ''
-  - '~'
-  - '!'
-  - '['
-  - ']'
+  - '7'
+  - '8'
+  - '9'
   - +
+  - F12
+  - F7
+  - F8
+  - F9
+  - /
   - {t: ▽, type: trans}
+  - RALT
+  - LCTRL
+  - {t: '4', h: LEFT ALT}
+  - {t: '5', h: LEFT GUI}
+  - {t: '6', h: LEFT SHIFT}
+  - '-'
+  - F11
+  - {t: F4, h: LEFT SHIFT}
+  - {t: F5, h: LEFT GUI}
+  - {t: F6, h: LEFT ALT}
+  - LEFT CONTROL
+  - RALT
   - {t: ▽, type: trans}
-  - ;
-  - <
-  - '>'
-  - '#'
-  - '|'
+  - ','
+  - '1'
+  - '2'
+  - '3'
+  - '*'
+  - '&sys_reset'
+  - '&sys_reset'
+  - F10
+  - F1
+  - F2
+  - F3
+  - .
+  - DELETE
   - ''
   - ''
-  - ''
-  - '&jsfn'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - .
+  - '0'
+  - BACKSPACE
+  - ESCAPE
   - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  ' nav-m':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Alt+LEFT
+  - Alt+RIGHT
+  - VOLUME DOWN
+  - VOLUME UP
+  - ''
+  - ''
+  - INS
+  - PAGE DOWN
+  - PG UP
+  - ''
+  - ''
+  - RALT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
+  - LEFT SHIFT
+  - Ctl+Sft+Gui+4
+  - Alt+Ctl+LEFT ARROW
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT
+  - Alt+Ctl+RIGHT
+  - BRIGHTNESS DEC
+  - BRIGHTNESS INC
+  - PREVIOUS
+  - PLAY PAUSE
+  - FORWARD
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - HOME
+  - END
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - '&caps_word'
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -380,50 +258,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP DIVIDE
+  - ''
   - '7'
   - '8'
   - '9'
-  - KP PLUS
+  - +
   - F12
   - F7
   - F8
   - F9
+  - /
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RALT
   - LEFT GUI
   - {t: '4', h: LEFT ALT}
   - {t: '5', h: LEFT CONTROL}
   - {t: '6', h: LEFT SHIFT}
-  - KP MINUS
+  - '-'
   - F11
   - {t: F4, h: LEFT SHIFT}
   - {t: F5, h: LEFT CONTROL}
   - {t: F6, h: LEFT ALT}
   - LEFT GUI
-  - ''
+  - RALT
   - {t: ▽, type: trans}
   - ','
   - '1'
   - '2'
   - '3'
-  - KP MULTIPLY
+  - '*'
   - ''
   - ''
   - F10
   - F1
   - F2
   - F3
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - {t: ▽, type: trans}
   - .
+  - ''
+  - ''
+  - ''
+  - SPACE
   - '0'
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
+  - BACKSPACE
+  - ESCAPE
+  - {t: ENTER, type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -441,18 +319,18 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+Gui+Ctl+LEFT
-  - Alt+Gui+Ctl+RIGHT
   - Alt+LEFT
   - Alt+RIGHT
+  - VOLUME DOWN
+  - VOLUME UP
   - ''
   - ''
-  - ''
+  - INS
   - PAGE DOWN
   - PG UP
-  - Ctl+8
   - ''
   - ''
+  - LALT
   - LEFT GUI
   - LEFT ALT
   - LEFT CONTROL
@@ -469,22 +347,83 @@ layers:
   - PREVIOUS
   - PLAY PAUSE
   - AC FORWARD
+  - Sft+TAB
+  - BT CLR ALL
   - ''
-  - {t: ▽, type: trans}
-  - '&toMacBT'
   - ''
   - ''
   - HOME
   - END
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&caps_word'
   - ENTER
   - DEL
+  - ''
+  - ''
+  symb:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&addSurrounds'
+  - '@'
+  - _
+  - '='
+  - +
+  - '|'
+  - '&'
+  - '%'
+  - ^
+  - '&upDirectory'
+  - ''
+  - AltGr+/
+  - \
+  - '?'
+  - (
+  - )
+  - '-'
+  - '`'
+  - '{'
+  - '}'
+  - $
+  - '"'
+  - ''
+  - {t: AltGr+1, h: AltGr+Sft+1}
+  - '~'
+  - '!'
+  - '['
+  - ']'
+  - '*'
+  - BT NXT
+  - {t: ▽, type: trans}
+  - '#'
+  - <
+  - '>'
+  - ;
+  - AltGr+5
+  - ''
+  - ''
+  - ''
+  - '&jsfn'
+  - SPACE
+  - BACKSPACE
+  - {type: held}
+  - ENTER
+  - ''
   - ''
   - ''
