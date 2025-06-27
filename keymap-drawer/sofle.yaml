@@ -1,5 +1,66 @@
 layout: {zmk_keyboard: sofle}
 layers:
+  ' win':
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+TAB
+  - Q
+  - L
+  - Y
+  - P
+  - B
+  - Z
+  - F
+  - O
+  - U
+  - {t: /, h: mouse}
+  - Alt+SPACE
+  - RIGHT ALT
+  - {t: C, h: LEFT GUI}
+  - {t: R, h: LEFT ALT}
+  - {t: S, h: LEFT CONTROL}
+  - {t: T, h: LEFT SHIFT}
+  - G
+  - M
+  - {t: N, h: LEFT SHIFT}
+  - {t: E, h: LEFT CONTROL}
+  - {t: I, h: LEFT ALT}
+  - {t: A, h: LEFT GUI}
+  - ''''
+  - {t: ENTER, h: ESCAPE}
+  - W
+  - J
+  - {t: V, h: Ctl+C}
+  - {t: D, h: Ctl+V}
+  - K
+  - '&toMacBT'
+  - BT NXT
+  - X
+  - H
+  - ':'
+  - ','
+  - .
+  - {t: DELETE, h: Alt+F4}
+  - ''
+  - ''
+  - {t: TAB, h: ' nav-w'}
+  - SPACE
+  - BACKSPACE
+  - {t: ESCAPE, h: numb-w}
+  - {t: ENTER, h: symb}
+  - DELETE
+  - ''
+  - ''
   ' mac':
   - ''
   - ''
@@ -56,68 +117,7 @@ layers:
   - {t: TAB, h: ' nav-m'}
   - SPACE
   - BACKSPACE
-  - {t: ESCAPE, h: numb-m}
-  - {t: ENTER, h: symb}
-  - DELETE
-  - ''
-  - ''
-  ' win':
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Gui+TAB
-  - Q
-  - L
-  - Y
-  - P
-  - B
-  - Z
-  - F
-  - O
-  - U
-  - /
-  - Alt+SPACE
-  - RIGHT ALT
-  - {t: C, h: LEFT GUI}
-  - {t: R, h: LEFT ALT}
-  - {t: S, h: LEFT CONTROL}
-  - {t: T, h: LEFT SHIFT}
-  - G
-  - M
-  - {t: N, h: LEFT SHIFT}
-  - {t: E, h: LEFT CONTROL}
-  - {t: I, h: LEFT ALT}
-  - {t: A, h: LEFT GUI}
-  - ''''
-  - {t: ENTER, h: ESCAPE}
-  - W
-  - J
-  - {t: V, h: Ctl+C}
-  - {t: D, h: Ctl+V}
-  - K
-  - '&toMacBT'
-  - BT NXT
-  - X
-  - H
-  - ':'
-  - ','
-  - .
-  - {t: DELETE, h: Alt+F4}
-  - ''
-  - ''
-  - {t: TAB, h: ' nav-w'}
-  - SPACE
-  - BACKSPACE
-  - {t: ESCAPE, h: numb-w}
+  - {t: ESCAPE, h: ' nav-m'}
   - {t: ENTER, h: symb}
   - DELETE
   - ''
@@ -165,8 +165,8 @@ layers:
   - '2'
   - '3'
   - '*'
-  - '&sys_reset'
-  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F10
   - F1
   - F2
@@ -178,7 +178,7 @@ layers:
   - .
   - '0'
   - BACKSPACE
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -223,8 +223,8 @@ layers:
   - BRIGHTNESS DEC
   - BRIGHTNESS INC
   - PREVIOUS
-  - PLAY PAUSE
-  - FORWARD
+  - Gui+PLAY PAUSE
+  - AC FORWARD
   - ''
   - BT CLR
   - ''
@@ -454,29 +454,29 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB3'
+  - '&mkp MB2'
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT SHIFT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - '&mkp MB4'
+  - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - UP ARROW
+  - RIGHT ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
