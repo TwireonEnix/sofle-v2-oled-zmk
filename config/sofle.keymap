@@ -68,17 +68,10 @@
     };
 
     macros {
-        addSurrounds: addSurrounds {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp Y &kp Z &kp I &kp W>;
-            label = "ADDSURROUNDS";
-        };
-
         jsfn: jsfn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS &kp SPACE &kp EQUAL &kp GREATER_THAN &kp SPACE &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
+            bindings = <&kp EQUAL &kp GREATER_THAN &kp SPACE &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
             label = "JSFN";
         };
 
@@ -92,7 +85,7 @@
         toMacBT: toMacbt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1 &to 1>;
+            bindings = <&bt BT_SEL 1 &to 2>;
             label = "TOMACBT";
         };
 
@@ -110,11 +103,11 @@
         WIN {
             label = " win";
             bindings = <
-&none             &none            &none            &none                &none              &none                                     &none        &none              &none                &none            &none                   &none
-&kp LG(TAB)       &kp Q            &kp L            &kp Y                &kp P              &kp B                                     &kp Z        &kp F              &kp O                &kp U            &toLayerModTap 7 SLASH  &kp LA(SPACE)
-&kp RIGHT_ALT     &hml LEFT_GUI C  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G                                     &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_CONTROL E  &hmr LEFT_ALT I  &hmr LEFT_GUI A         &kp SINGLE_QUOTE
-&mt ESCAPE ENTER  &kp W            &kp J            &mt LC(C) V          &mt LC(V) D        &kp K      &toMacBT         &bt BT_NXT    &kp X        &kp H              &kp COLON            &kp COMMA        &kp PERIOD              &mt LA(F4) DELETE
-                                   &none            &none                &lt 5 TAB          &kp SPACE  &kp BACKSPACE    &lt 4 ESCAPE  &lt 6 ENTER  &kp DELETE         &none                &none
+&none             &none            &none            &none                &none              &none                                   &none        &none              &none                &none            &none            &none
+&kp LG(TAB)       &kp Q            &kp L            &kp Y                &kp P              &kp B                                   &kp Z        &kp F              &kp O                &kp U            &kp SLASH        &kp LA(SPACE)
+&kp RIGHT_ALT     &hml LEFT_GUI C  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G                                   &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_CONTROL E  &hmr LEFT_ALT I  &hmr LEFT_GUI A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W            &kp J            &mt LC(C) V          &mt LC(V) D        &kp K      &toMacBT         &to 7       &kp X        &kp H              &kp COLON            &kp COMMA        &kp PERIOD       &mt LA(F4) DELETE
+                                   &none            &none                &lt 5 TAB          &kp SPACE  &kp BACKSPACE    &kp ESCAPE  &lt 4 ENTER  &lt 6 DELETE       &none                &none
             >;
 
             sensor-bindings =
@@ -125,11 +118,11 @@
         MAC {
             label = " mac";
             bindings = <
-&none             &none                &none            &none            &none              &none                                     &none        &none              &none            &none            &none                &none
-&kp LC(UP_ARROW)  &kp Q                &kp L            &kp Y            &kp P              &kp B                                     &kp Z        &kp F              &kp O            &kp U            &kp SLASH            &kp LG(SPACE)
-&kp RIGHT_ALT     &hml LEFT_CONTROL C  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G                                     &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_GUI E  &hmr LEFT_ALT I  &hmr LEFT_CONTROL A  &kp SINGLE_QUOTE
-&mt ESCAPE ENTER  &kp W                &kp J            &mt LG(C) V      &mt LG(V) D        &kp K      &toWinBT         &bt BT_NXT    &kp X        &kp H              &kp COLON        &kp COMMA        &kp PERIOD           &mt LG(Q) DELETE
-                                       &none            &none            &lt 3 TAB          &kp SPACE  &kp BACKSPACE    &lt 3 ESCAPE  &lt 6 ENTER  &kp DELETE         &none            &none
+&none             &none                &none            &none            &none              &none                                   &none        &none              &none            &none            &none                &none
+&kp LC(UP_ARROW)  &kp Q                &kp L            &kp Y            &kp P              &kp B                                   &kp Z        &kp F              &kp O            &kp U            &kp SLASH            &kp LG(SPACE)
+&kp RIGHT_ALT     &hml LEFT_CONTROL C  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G                                   &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_GUI E  &hmr LEFT_ALT I  &hmr LEFT_CONTROL A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W                &kp J            &mt LG(C) V      &mt LG(V) D        &kp K      &toWinBT         &kp C_MUTE  &kp X        &kp H              &kp COLON        &kp COMMA        &kp PERIOD           &mt LG(Q) DELETE
+                                       &none            &none            &lt 3 TAB          &kp SPACE  &kp BACKSPACE    &kp ESCAPE  &lt 2 ENTER  &lt 6 DELETE       &none            &none
             >;
 
             sensor-bindings =
@@ -140,11 +133,11 @@
         MAC-Numbers {
             label = "numb-m";
             bindings = <
-&none     &none      &none                  &none                  &none                    &none                                  &trans   &trans             &trans           &trans           &trans            &trans
-&trans    &none      &kp N7                 &kp N8                 &kp N9                   &kp PLUS                               &kp F12  &kp F7             &kp F8           &kp F9           &kp SLASH         &trans
-&kp RALT  &kp LCTRL  &mt LEFT_ALT NUMBER_4  &mt LEFT_GUI NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp MINUS                              &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_GUI F5  &mt LEFT_ALT F6  &kp LEFT_CONTROL  &kp RALT
-&trans    &kp COMMA  &kp N1                 &kp N2                 &kp N3                   &kp ASTERISK  &trans           &trans  &kp F10  &kp F1             &kp F2           &kp F3           &kp PERIOD        &kp DELETE
-                     &none                  &none                  &kp DOT                  &kp N0        &kp BACKSPACE    &trans  &trans   &trans             &none            &none
+&none     &none      &none                  &none                  &none                    &none                            &trans   &trans             &trans           &trans           &trans            &trans
+&trans    &none      &kp N7                 &kp N8                 &kp N9                   &none                            &kp F12  &kp F7             &kp F8           &kp F9           &none             &trans
+&kp RALT  &kp LCTRL  &mt LEFT_ALT NUMBER_4  &mt LEFT_GUI NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &none                            &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_GUI F5  &mt LEFT_ALT F6  &kp LEFT_CONTROL  &kp RALT
+&trans    &kp COMMA  &kp N1                 &kp N2                 &kp N3                   &none   &trans           &trans  &kp F10  &kp F1             &kp F2           &kp F3           &kp PERIOD        &kp DELETE
+                     &none                  &none                  &kp DOT                  &kp N0  &kp BACKSPACE    &trans  &trans   &trans             &none            &none
             >;
 
             sensor-bindings =
@@ -155,22 +148,22 @@
         MAC-Navigation {
             label = " nav-m";
             bindings = <
-&none                 &none                 &none           &none                 &none             &none                                               &none                   &none           &none           &none         &none      &none
-&none                 &kp LA(LEFT)          &kp LA(RIGHT)   &kp C_VOLUME_DOWN     &kp C_VOLUME_UP   &none                                               &none                   &kp INS         &kp PAGE_DOWN   &kp PG_UP     &none      &none
-&kp RALT              &kp LEFT_CONTROL      &kp LEFT_ALT    &kp LEFT_GUI          &kp LEFT_SHIFT    &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LA(LC(RIGHT))
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp LG(C_PLAY_PAUSE)  &kp C_AC_FORWARD  &none                     &bt BT_CLR    &none       &none                   &none           &kp HOME        &kp END       &none      &none
-                                            &none           &none                 &none             &none                     &none         &caps_word  &trans                  &trans          &none           &none
+&none                 &none                 &none           &none                 &none             &none                                               &none                   &none              &none           &none         &none                  &none
+&none                 &kp LG(LEFT)          &kp LG(RIGHT)   &kp C_VOLUME_DOWN     &kp C_VOLUME_UP   &none                                               &kp LA(LC(LG(LEFT)))    &kp INS            &kp PAGE_DOWN   &kp PG_UP     &kp LA(LC(C))          &kp LA(LG(LC(RIGHT)))
+&kp RALT              &kp LEFT_CONTROL      &kp LEFT_ALT    &kp LEFT_GUI          &kp LEFT_SHIFT    &kp LC(LS(LG(NUMBER_4)))                            &kp LA(LC(LEFT_ARROW))  &kp LEFT_ARROW     &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT              &kp LA(LC(RIGHT))
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_PREVIOUS  &kp LG(C_PLAY_PAUSE)  &kp C_AC_FORWARD  &none                     &bt BT_CLR    &to 0       &none                   &kp LC(LA(ENTER))  &kp HOME        &kp END       &kp LC(LA(BACKSPACE))  &none
+                                            &none           &none                 &trans            &none                     &none         &caps_word  &kp ENTER               &kp DELETE         &none           &none
             >;
         };
 
         WIN-Numbers {
             label = "numb-w";
             bindings = <
-&none     &none         &none                  &none                      &none                    &none                               &trans   &trans             &trans               &trans           &trans        &trans
-&trans    &none         &kp N7                 &kp N8                     &kp N9                   &kp PLUS                            &kp F12  &kp F7             &kp F8               &kp F9           &kp SLASH     &none
-&kp RALT  &kp LEFT_GUI  &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &kp MINUS                           &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_CONTROL F5  &mt LEFT_ALT F6  &kp LEFT_GUI  &kp RALT
-&trans    &kp COMMA     &kp N1                 &kp N2                     &kp N3                   &kp ASTRK  &none            &none   &kp F10  &kp F1             &kp F2               &kp F3           &kp PERIOD    &none
-                        &none                  &none                      &kp SPACE                &kp N0     &kp BACKSPACE    &trans  &trans   &trans             &trans               &trans
+&none     &none         &none                  &none                      &none                    &none                            &trans   &trans             &trans               &trans           &trans        &trans
+&trans    &none         &kp N7                 &kp N8                     &kp N9                   &none                            &kp F12  &kp F7             &kp F8               &kp F9           &none         &none
+&kp RALT  &kp LEFT_GUI  &mt LEFT_ALT NUMBER_4  &mt LEFT_CONTROL NUMBER_5  &mt LEFT_SHIFT NUMBER_6  &none                            &kp F11  &mt LEFT_SHIFT F4  &mt LEFT_CONTROL F5  &mt LEFT_ALT F6  &kp LEFT_GUI  &kp RALT
+&trans    &kp COMMA     &kp N1                 &kp N2                     &kp N3                   &none   &none            &none   &kp F10  &kp F1             &kp F2               &kp F3           &kp PERIOD    &none
+                        &none                  &none                      &kp SPACE                &kp N0  &kp BACKSPACE    &trans  &trans   &trans             &trans               &trans
             >;
 
             sensor-bindings =
@@ -181,11 +174,11 @@
         WIN-Navigation {
             label = " nav-w";
             bindings = <
-&none     &none         &none           &none              &none             &none                                        &none               &none           &none           &none         &none      &none
-&none     &kp LA(LEFT)  &kp LA(RIGHT)   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none                                        &none               &kp INS         &kp PAGE_DOWN   &kp PG_UP     &none      &none
-&kp LALT  &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_CONTROL   &kp LEFT_SHIFT    &kp LS(LG(S))                                &kp LG(LEFT_ARROW)  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &kp LG(RIGHT)
-&none     &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_AC_FORWARD  &kp LS(TAB)    &bt BT_CLR_ALL    &none       &none               &none           &kp HOME        &kp END       &none      &none
-                        &none           &none              &trans            &trans         &trans            &caps_word  &kp ENTER           &kp DEL         &none           &none
+&none     &none         &none           &none              &none             &none                                        &none                   &none             &none           &none         &none             &none
+&none     &kp LA(LEFT)  &kp LA(RIGHT)   &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none                                        &kp LS(LG(LEFT_ARROW))  &kp INS           &kp PAGE_DOWN   &kp PG_UP     &none             &kp LS(LG(RIGHT))
+&kp LALT  &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_CONTROL   &kp LEFT_SHIFT    &kp LS(LG(S))                                &kp LG(LEFT_ARROW)      &kp LEFT_ARROW    &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp LG(RIGHT)
+&none     &none         &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_AC_FORWARD  &kp LS(TAB)    &bt BT_CLR_ALL    &to 1       &none                   &kp LG(UP_ARROW)  &kp HOME        &kp END       &kp LS(LG(DOWN))  &none
+                        &none           &none              &trans            &trans         &trans            &caps_word  &kp ENTER               &kp DEL           &none           &none
             >;
         };
 
@@ -193,8 +186,8 @@
             label = "symb";
             bindings = <
 &none                              &none          &none         &none                 &none                  &none                               &none      &none          &none             &none       &none              &none
-&none                              &addSurrounds  &kp AT        &kp UNDER             &kp EQUAL              &kp PLUS                            &kp PIPE   &kp AMPERSAND  &kp PRCNT         &kp CARET   &upDirectory       &none
-&kp RA(SLASH)                      &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS                           &kp GRAVE  &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
+&none                              &kp RA(SLASH)  &kp AT        &kp UNDER             &kp EQUAL              &kp PLUS                            &kp PIPE   &kp AMPERSAND  &kp PRCNT         &kp CARET   &upDirectory       &none
+&jsfn                              &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS                           &kp GRAVE  &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
 &mt RA(LS(NUMBER_1)) RA(NUMBER_1)  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &bt BT_NXT       &trans  &kp HASH   &kp LESS_THAN  &kp GREATER_THAN  &kp SEMI    &kp RA(NUMBER_5)   &none
                                                   &none         &none                 &jsfn                  &kp SPACE  &kp BACKSPACE    &none   &kp ENTER  &none          &none             &none
             >;
@@ -209,7 +202,7 @@
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans          &trans            &trans        &trans           &trans
 &trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans          &trans            &trans        &trans           &trans
 &trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_GUI     &trans
-&trans  &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans    &mkp MB4  &mkp MB5  &trans  &trans    &to 0   &trans  &kp LEFT_ARROW  &kp DOWN_ARROW    &kp UP_ARROW  &kp RIGHT_ARROW  &trans
                 &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans          &trans            &trans
             >;
 
