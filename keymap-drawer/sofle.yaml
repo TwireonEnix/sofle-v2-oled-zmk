@@ -23,7 +23,7 @@ layers:
   - F
   - O
   - U
-  - {t: /, h: mouse}
+  - /
   - Alt+SPACE
   - RIGHT ALT
   - {t: C, h: LEFT GUI}
@@ -44,7 +44,7 @@ layers:
   - {t: D, h: Ctl+V}
   - K
   - '&toMacBT'
-  - BT NXT
+  - {t: mouse, h: toggle}
   - X
   - H
   - ':'
@@ -56,9 +56,9 @@ layers:
   - {t: TAB, h: ' nav-w'}
   - SPACE
   - BACKSPACE
-  - {t: ESCAPE, h: numb-w}
-  - {t: ENTER, h: symb}
-  - DELETE
+  - ESCAPE
+  - {t: ENTER, h: numb-w}
+  - {t: DELETE, h: symb}
   - ''
   - ''
   ' mac':
@@ -105,7 +105,7 @@ layers:
   - {t: D, h: Gui+V}
   - K
   - '&toWinBT'
-  - BT NXT
+  - MUTE
   - X
   - H
   - ':'
@@ -117,9 +117,9 @@ layers:
   - {t: TAB, h: ' nav-m'}
   - SPACE
   - BACKSPACE
-  - {t: ESCAPE, h: ' nav-m'}
-  - {t: ENTER, h: symb}
-  - DELETE
+  - ESCAPE
+  - {t: ENTER, h: numb-m}
+  - {t: DELETE, h: symb}
   - ''
   - ''
   numb-m:
@@ -140,19 +140,19 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
+  - ''
   - F12
   - F7
   - F8
   - F9
-  - /
+  - ''
   - {t: ▽, type: trans}
   - RALT
   - LCTRL
   - {t: '4', h: LEFT ALT}
   - {t: '5', h: LEFT GUI}
   - {t: '6', h: LEFT SHIFT}
-  - '-'
+  - ''
   - F11
   - {t: F4, h: LEFT SHIFT}
   - {t: F5, h: LEFT GUI}
@@ -164,7 +164,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '*'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F10
@@ -179,7 +179,7 @@ layers:
   - '0'
   - BACKSPACE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - ''
   - ''
@@ -197,17 +197,17 @@ layers:
   - ''
   - ''
   - ''
-  - Alt+LEFT
-  - Alt+RIGHT
+  - Gui+LEFT
+  - Gui+RIGHT
   - VOLUME DOWN
   - VOLUME UP
   - ''
-  - ''
+  - Alt+Ctl+Gui+LEFT
   - INS
   - PAGE DOWN
   - PG UP
-  - ''
-  - ''
+  - Alt+Ctl+C
+  - Alt+Gui+Ctl+RIGHT
   - RALT
   - LEFT CONTROL
   - LEFT ALT
@@ -227,12 +227,12 @@ layers:
   - AC FORWARD
   - ''
   - BT CLR
+  - {t: ' win', h: toggle}
   - ''
-  - ''
-  - ''
+  - Ctl+Alt+ENTER
   - HOME
   - END
-  - ''
+  - Ctl+Alt+BACKSPACE
   - ''
   - ''
   - ''
@@ -240,8 +240,8 @@ layers:
   - ''
   - ''
   - '&caps_word'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ENTER
+  - DELETE
   - ''
   - ''
   numb-w:
@@ -262,19 +262,19 @@ layers:
   - '7'
   - '8'
   - '9'
-  - +
+  - ''
   - F12
   - F7
   - F8
   - F9
-  - /
+  - ''
   - ''
   - RALT
   - LEFT GUI
   - {t: '4', h: LEFT ALT}
   - {t: '5', h: LEFT CONTROL}
   - {t: '6', h: LEFT SHIFT}
-  - '-'
+  - ''
   - F11
   - {t: F4, h: LEFT SHIFT}
   - {t: F5, h: LEFT CONTROL}
@@ -286,7 +286,7 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '*'
+  - ''
   - ''
   - ''
   - F10
@@ -300,8 +300,8 @@ layers:
   - SPACE
   - '0'
   - BACKSPACE
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -324,12 +324,12 @@ layers:
   - VOLUME DOWN
   - VOLUME UP
   - ''
-  - ''
+  - Sft+Gui+LEFT ARROW
   - INS
   - PAGE DOWN
   - PG UP
   - ''
-  - ''
+  - Sft+Gui+RIGHT
   - LALT
   - LEFT GUI
   - LEFT ALT
@@ -349,12 +349,12 @@ layers:
   - AC FORWARD
   - Sft+TAB
   - BT CLR ALL
+  - {t: ' mac', h: toggle}
   - ''
-  - ''
-  - ''
+  - Gui+UP ARROW
   - HOME
   - END
-  - ''
+  - Sft+Gui+DOWN
   - ''
   - ''
   - ''
@@ -380,7 +380,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&addSurrounds'
+  - AltGr+/
   - '@'
   - _
   - '='
@@ -391,7 +391,7 @@ layers:
   - ^
   - '&upDirectory'
   - ''
-  - AltGr+/
+  - '&jsfn'
   - \
   - '?'
   - (
@@ -423,8 +423,8 @@ layers:
   - SPACE
   - BACKSPACE
   - ''
-  - {t: ENTER, type: held}
-  - ''
+  - ENTER
+  - {type: held}
   - ''
   - ''
   mouse:
@@ -471,7 +471,7 @@ layers:
   - '&mkp MB5'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: ' win', h: toggle}
   - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
