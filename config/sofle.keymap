@@ -103,11 +103,11 @@
         WIN {
             label = " win";
             bindings = <
-&none             &none            &none            &none                &none              &none                                   &none        &none              &none                &none            &none            &none
-&kp LG(TAB)       &kp Q            &kp L            &kp Y                &kp P              &kp B                                   &kp Z        &kp F              &kp O                &kp U            &kp SLASH        &kp LA(SPACE)
-&kp RIGHT_ALT     &hml LEFT_GUI C  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G                                   &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_CONTROL E  &hmr LEFT_ALT I  &hmr LEFT_GUI A  &kp SINGLE_QUOTE
-&mt ESCAPE ENTER  &kp W            &kp J            &mt LC(C) V          &mt LC(V) D        &kp K      &toMacBT         &to 7       &kp X        &kp H              &kp COLON            &kp COMMA        &kp PERIOD       &mt LA(F4) DELETE
-                                   &none            &none                &lt 5 TAB          &kp SPACE  &kp BACKSPACE    &kp ESCAPE  &lt 4 ENTER  &lt 6 DELETE       &none                &none
+&none             &none            &none            &none                &none              &none                                     &none        &none              &none                &none            &none            &none
+&kp LG(TAB)       &kp Q            &kp L            &kp Y                &kp P              &kp B                                     &kp Z        &kp F              &kp O                &kp U            &kp SLASH        &kp LA(SPACE)
+&kp RIGHT_ALT     &hml LEFT_GUI C  &hml LEFT_ALT R  &hml LEFT_CONTROL S  &hml LEFT_SHIFT T  &kp G                                     &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_CONTROL E  &hmr LEFT_ALT I  &hmr LEFT_GUI A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W            &kp J            &mt LC(C) V          &mt LC(V) D        &kp K      &toMacBT         &to 7         &kp X        &kp H              &kp COLON            &kp COMMA        &kp PERIOD       &mt LA(F4) DELETE
+                                   &none            &none                &lt 5 TAB          &kp SPACE  &kp BACKSPACE    &lt 4 ESCAPE  &lt 6 ENTER  &kp DELETE         &none                &none
             >;
 
             sensor-bindings =
@@ -118,11 +118,11 @@
         MAC {
             label = " mac";
             bindings = <
-&none             &none                &none            &none            &none              &none                                   &none        &none              &none            &none            &none                &none
-&kp LC(UP_ARROW)  &kp Q                &kp L            &kp Y            &kp P              &kp B                                   &kp Z        &kp F              &kp O            &kp U            &kp SLASH            &kp LG(SPACE)
-&kp RIGHT_ALT     &hml LEFT_CONTROL C  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G                                   &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_GUI E  &hmr LEFT_ALT I  &hmr LEFT_CONTROL A  &kp SINGLE_QUOTE
-&mt ESCAPE ENTER  &kp W                &kp J            &mt LG(C) V      &mt LG(V) D        &kp K      &toWinBT         &kp C_MUTE  &kp X        &kp H              &kp COLON        &kp COMMA        &kp PERIOD           &mt LG(Q) DELETE
-                                       &none            &none            &lt 3 TAB          &kp SPACE  &kp BACKSPACE    &kp ESCAPE  &lt 2 ENTER  &lt 6 DELETE       &none            &none
+&none             &none                &none            &none            &none              &none                                     &none        &none              &none            &none            &none                &none
+&kp LC(UP_ARROW)  &kp Q                &kp L            &kp Y            &kp P              &kp B                                     &kp Z        &kp F              &kp O            &kp U            &kp SLASH            &kp LG(SPACE)
+&kp RIGHT_ALT     &hml LEFT_CONTROL C  &hml LEFT_ALT R  &hml LEFT_GUI S  &hml LEFT_SHIFT T  &kp G                                     &kp M        &hmr LEFT_SHIFT N  &hmr LEFT_GUI E  &hmr LEFT_ALT I  &hmr LEFT_CONTROL A  &kp SINGLE_QUOTE
+&mt ESCAPE ENTER  &kp W                &kp J            &mt LG(C) V      &mt LG(V) D        &kp K      &toWinBT         &kp C_MUTE    &kp X        &kp H              &kp COLON        &kp COMMA        &kp PERIOD           &mt LG(Q) DELETE
+                                       &none            &none            &lt 3 TAB          &kp SPACE  &kp BACKSPACE    &lt 2 ESCAPE  &lt 6 ENTER  &kp DELETE         &none            &none
             >;
 
             sensor-bindings =
@@ -186,9 +186,9 @@
             label = "symb";
             bindings = <
 &none                              &none          &none         &none                 &none                  &none                               &none      &none          &none             &none       &none              &none
-&none                              &kp RA(SLASH)  &kp AT        &kp UNDER             &kp EQUAL              &kp PLUS                            &kp PIPE   &kp AMPERSAND  &kp PRCNT         &kp CARET   &upDirectory       &none
-&jsfn                              &kp BACKSLASH  &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS                           &kp GRAVE  &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
-&mt RA(LS(NUMBER_1)) RA(NUMBER_1)  &kp TILDE      &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &bt BT_NXT       &trans  &kp HASH   &kp LESS_THAN  &kp GREATER_THAN  &kp SEMI    &kp RA(NUMBER_5)   &none
+&none                              &kp RA(SLASH)  &kp GRAVE     &kp UNDER             &kp PLUS               &kp PIPE                            &kp AT     &kp AMPERSAND  &kp PRCNT         &kp CARET   &upDirectory       &none
+&jsfn                              &kp TILDE      &kp QUESTION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS                           &kp EQUAL  &kp LBRC       &kp RBRC          &kp DOLLAR  &kp DOUBLE_QUOTES  &none
+&mt RA(LS(NUMBER_1)) RA(NUMBER_1)  &kp BACKSLASH  &kp EXCL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &bt BT_NXT       &trans  &kp HASH   &kp LESS_THAN  &kp GREATER_THAN  &kp SEMI    &kp RA(NUMBER_5)   &none
                                                   &none         &none                 &jsfn                  &kp SPACE  &kp BACKSPACE    &none   &kp ENTER  &none          &none             &none
             >;
 
