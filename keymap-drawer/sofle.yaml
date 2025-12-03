@@ -175,8 +175,8 @@ layers:
   - DELETE
   - ''
   - ''
-  - .
   - '0'
+  - SPACE
   - BACKSPACE
   - {type: held}
   - {t: ▽, type: trans}
@@ -297,8 +297,8 @@ layers:
   - ''
   - ''
   - ''
-  - SPACE
   - '0'
+  - SPACE
   - BACKSPACE
   - {type: held}
   - {t: ▽, type: trans}
@@ -379,36 +379,36 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - LEFT COMMAND
   - AltGr+/
-  - '`'
-  - _
+  - '*'
+  - '-'
   - +
-  - '|'
   - '@'
+  - '|'
   - '&'
   - '%'
   - ^
   - '&upDirectory'
-  - ''
-  - '&jsfn'
+  - LEFT COMMAND
+  - LEFT SHIFT
   - '~'
   - '?'
   - (
   - )
-  - '-'
   - '='
+  - '`'
   - '{'
   - '}'
   - $
   - '"'
-  - ''
-  - {t: AltGr+1, h: AltGr+Sft+1}
+  - LEFT SHIFT
+  - {t: AltGr+Sft+1, h: AltGr+1}
   - \
   - '!'
   - '['
   - ']'
-  - '*'
+  - _
   - BT NXT
   - {t: ▽, type: trans}
   - '#'
